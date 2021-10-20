@@ -1,0 +1,8 @@
+Třídy zakomponujte do aplikace, která bude interaktivně zadávat body tvořící vrcholy n-úhelníku.
+Využijte ukázku CanvasRasterBufferedImage.
+- Vrcholy zadávejte interaktivně: stisknutím tlačítka myši vytvořte nový bod spojený s dvěma již vytvořenými vrcholy, např. s prvním a posledním. Tažením kreslete pružnou čáru k oběma vrcholům a uvolněním tlačítka přidejte bod do seznamu vrcholů n-úhelníku.
+- Přidejte režim (po stisknutí klávesy T) pro kreslení pravoúhlého trojúhelníka, první dva body tvoří přeponu, třetí leží Thaletově kružnici.
+- Přidejte třídu DottedLineRasterizer dědící také z abstraktní třídy LineRasterizer, vykreslující tečkovanou úsečku. Zakomponujte třídu do aplikace, například při editaci se bude vykreslovat tečkovaná čára a překreslení celého útvaru bude plnou čarou.
+- Implementujte funkci na klávesu C pro mazání plátna a všech datových struktur.
+- Bonus: Upravte program tak, aby bylo možné souřadnice jednotlivých vrcholů editovat myší. Například při stisku pravého tlačítka myši naleznete nejbližší vrchol a tažením mu nastavíte novou souřadnici. Podobně i přidávání nových vrcholů bude nový vrchol umístěn do nejbližší hrany.
+- Bonus2: u tečkované úsečky modifikujte algoritmus tak, aby tečky byly vzdáleny stejně daleko, bez ohledu na strmost čáry, vzdálenost teček je vhodné parametrizovat. První a poslední mezeru mezi tečkami upravte tak, aby byly stejné, ostatní podle parametru. Zkuste navrhnout řešení pro různé typy čar, čárkovanou, tečkovanou, čerchovanou, …
